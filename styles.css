@@ -1,0 +1,47 @@
+.menu{
+    margin-left : 25%;
+    background-color: gray;
+    color: white;
+    width: 40%;
+    font-size: 20px;
+    padding: 5%;
+    font-family: "Book Antiqua";
+}
+.p{
+    width: 20%;
+    padding: 1%;
+}
+.input{
+    width: 70%;
+    margin-left: 15%;
+}
+#submit {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    background: red;
+}
+#submit:hover{background: rgba(255,255,255,.2)}
+#submit:active { background: white; }
+#get{
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    background: darkgray;
+}
+#get:hover{background: rgba(255,255,255,.2)}
+#get:active { background: white; }
