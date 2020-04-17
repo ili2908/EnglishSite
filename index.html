@@ -25,7 +25,51 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
 
+</head>
+<body>
+<div class = "menu">
+    <p class="p">Question:</p>
+        <input id="Question" class = "input"></input>
+    <div>
+        <p class = "p">Answer:</p>
+            <input id="Answer" class = "input"></input>
+        <p>percetage<span id="percent"></span><p>
+    </div>
+    <button id="submit">Submit Answer</button>
+    <button id="get">Get Answer</button>
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDZx4me6oDJkcXfiLF4zRwWKjWFSn7aOCE",
+        authDomain: "enlishsite.firebaseapp.com",
+        databaseURL: "https://enlishsite.firebaseio.com",
+        projectId: "enlishsite",
+        storageBucket: "enlishsite.appspot.com",
+        messagingSenderId: "887067706864",
+        appId: "1:887067706864:web:e8e41e10ca10255c5c8935"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="functions.js"></script>
+</body>
+</html>
     <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
