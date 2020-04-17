@@ -10,13 +10,15 @@ getButton.addEventListener("click",(e)=>{
     rootRef.orderByKey().on('value',snapshot=>{
 
         var answers = snapshot.val()[question.value];
-        
+        console.log(answers);
         var cur=-1;
         var curi;
-        var sum;
+        var sum=0;
         for(var i in answers){
+            
+            
             if(answers[i]>cur){
-                cur=answer[i]
+                cur=answers[i];
                 curi=i;
             }
             sum+=answers[i];
