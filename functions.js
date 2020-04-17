@@ -40,10 +40,11 @@ submitButton.addEventListener("click", (e) => {
             database.ref().update(updates);
         } else if (number) {
             var o = {};
-            o[answer.value] = number + 1;
+           
             for(var i in answers){
                 o[i] = answers[i];
             }
+            o[answer.value] = number + 1;
             const newData = o;
             const updates = {};
             updates['/answers/' + question.value] = newData;
